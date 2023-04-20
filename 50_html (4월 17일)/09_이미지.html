@@ -21,17 +21,35 @@
     
     <!-- 폴더와 파일명 구분자는 /(슬래시) 이다. -->
     
+
+
+    <!-- 상대경로 지정 방법 -->
+
+    <!-- html문서를 기준으로 이미지가 어디있는가? -->
     <!-- 1. html문서보다 하위 폴더에 이미지가 있는 경우: 폴더1/폴더2/폴더3/.../파일명으로 쓴다. -->
+    <img src="assets/pic_trulli.jpg" alt="trilli">
+    <img src="assets/images/i2.jpg" alt="클러치백">
 
     <!-- 2. html문서와 이미지가 같은 폴더에 있는 경우: 파일 이름만 쓴다. -->
+    <img src="coffeebeans.jpg" alt="coffeebeans">
 
     <!-- 3. html문서보다 상위 폴더에 이미지가 있는 경우: ../../파일명으로 쓴다. -->
-
+    <img src="../workplace.jpg" alt="">
     <hr>
     <!-- 루트 폴더로 부터 경로 설정 -->
+    <img src="/50_html (4월 17일)/assets/pic_trulli.jpg" alt="trulli">
+    <img src="/50_html (4월 17일)/assets/images/i2.jpg" alt="클러치백">
+    <img src="/50_html (4월 17일)/coffeebeans.jpg" alt="coffeebeans">
+    <img src="/workplace.jpg" alt="">
 
     <hr>
     <!-- 절대 경로 지정 방법 -->
-
+    <img src="http://frontendw.dothome.co.kr/assets/images/banner.jpg" alt="Dress 1+1 보러가기">
+    <!-- 비트맵 이미지 : 
+        1) jpg : 24bit 트루컬러(사진)
+        2) gif : 256 color, 배경을 투명하게 저장할때는 gif로 쓴다, 움직이는 애니메이션gif
+        3) png : 24bit 트루컬러(사진), 배경을 투명하게 저장할때는 png로 쓴다
+    -->
+    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fmypetlife.co.kr%2F107933%2F&psig=AOvVaw1YCrTR-2zaKCMPuYwk8xJJ&ust=1682078547894000&source=images&cd=vfe&ved=0CA4QjRxqFwoTCIDQyIS1uP4CFQAAAAAdAAAAABAo" alt="">
 </body>
 </html>

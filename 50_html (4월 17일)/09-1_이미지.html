@@ -10,6 +10,25 @@
 
 <body>
     <h1>이미지</h1>
+
+    <!-- 
+        캡션: 워드 프로세서의 편집 과정에서, 삽입된 그림이나 도표, 사진 등의 이해를 돕기 위해 쓰는 간단한 주석문
+
+        //그룹핑 및 캡션
+        <img>: 이미지 연결
+        <figure>: 멀티미디어 그룹핑
+        <figcaption>: 캡션
+
+        // 이미지맵 - 하나의 이미지에 여러개의 링크 걸수있다.
+        <img src="" alt="" usemap="#zzz">
+        <map name="zzz">: 맵
+        <area shape="모양" coords="좌표">: 영역  
+        모양: rect(사각), circle(원), poly(다각형)
+        좌표: 1) rect: x1, y1, x2, y2
+              2) circle: x1, y1, r
+              3) poly: x1, y1, x2, y2, x3, y3,......(찍는만큼좌표점은 계속생긴다.)
+
+     -->
     <!-- 
         사용 이미지
         1. 이탈리아 풀리아주의 건축물인 트룰리: assets/pic_trulli.jpg
@@ -19,6 +38,10 @@
     -->
     <h2>캡션 달기</h2>
     <!-- figure와 figcaption을 사용하여 이미지에 캡션을 달아 보세요. -->
+    <figure>
+        <img src="assets/pic_trulli.jpg" alt="trulli">
+        <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+    </figure>
 
     <hr>
     <h2>이미지 맵</h2>
@@ -35,6 +58,15 @@
         3. shape="circle"의 경우 coords="x1,y1,R" (R은 반지름)
      -->
     <p>컴퓨터, 핸드폰, 커피 잔을 클릭하여 새 페이지로 이동하고 주제에 대해 자세히 읽어보십시오.</p>
+    <img src="../workplace.jpg" usemap="#image-map" alt="workplace">
+
+    <map name="image-map">
+        <area target="_blank" alt="핸드폰" title="클릭하면 구글로 이동 됩니다." href="https://google.com" coords="291,171,335,248" shape="rect">
+        <area target="_blank" alt="커피잔" title="클릭하면 네이버로 이동됩니다." href="https://naver.com" coords="339,299,46" shape="circle">
+        <area target="_blank" alt="노트북" title="클릭하면 교육사이트로 이동됩니다." href="http://wp90.rf.gd" coords="35,44,272,42,264,189,273,348,32,346,44,186" shape="poly">
+    <!--      target=생략가능 /  -->
+    </map>
+    
 
     <img src="" alt="" usemap="">
     <map name="">

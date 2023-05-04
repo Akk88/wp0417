@@ -18,16 +18,16 @@
                 flew-direction:column; 이면 주축 column, 교차축 row
 
             부모: 플렉스 컨테이너
-                1. display:flex;
-                2. flex-direction: 방향;
-                3. flex-wrap: 줄바꿈;
-                4. flex-flow: direction wrap
-                5. justify-content: 주축 정렬
-                6. align-items: 교차축 정렬
-                7. align-content: 교차축 블록 방향 정렬 (2개의 라인)
+            1. display:flex; (부모한테 지정)
+                1-2. flex-direction: 방향;
+                1-3. flex-wrap: 줄바꿈;
+                1-4. flex-flow: direction wrap
+                1-5. justify-content: 주축 정렬 (flex-direction 에 따라서결정 된다.)
+                1-6. align-items: 교차축 정렬★
+                1-7. align-content: 교차축 블록 방향 정렬 (2개의 라인)★
 
-            자식: 플렉스 아이템
-                8. align-self: 교차축 정렬, align-items 보다 우선 적용된다.
+            자식: 플렉스 아이템 (자식한테 지정)
+                8. align-self: 교차축 정렬, align-items 보다 우선 적용된다.★
                 9. flex-grow: 커진다.
                 10. flex-shrink: 작아진다.
                 11. flex-basis: 처음 크기
@@ -38,7 +38,8 @@
 
         /* 부모 요소인 .container의 display를 flex로 적용해 보세요. */
         .container {
-            outline: 1px solid red;
+            display: flex;/* 단축키df(display:flex) */
+            border: 1px solid red;
         }
 
         .container div {

@@ -8,6 +8,11 @@
     <style>
 
         /* (1) 본문의 두 번째 p 요소와 세 번째 p 요소에 ::after 선택자를 사용하여 clear:both; 처리하시오. */
+        p::after {
+            content: '';
+            clear:both;
+            display: block;
+        }
 
 
 

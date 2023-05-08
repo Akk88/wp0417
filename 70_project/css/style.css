@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+#wrap {
+    width: 1200px;/* 크기지정 */
+    margin: 0 auto;/* 가운데 배치 */
+}
+header {
+    display: flex;
+    justify-content: space-between;/* just랑 4종 양좌우로 (jcsb) */
+    height: 100px;/* 높이지정 */
+}/*  탑,아우터 4종을 just쇼핑몰 옆으로 옮기기 */
+
+/* 네비게이션 */
+.main {
+    display: flex;
+}/* 탑 아우터 4종 가로배치 */
+
+#slide {
+    height: 300px;
+    overflow: hidden;
+}
+
+#contents {
+    display: flex;
+    height: 200px;    
+}
+#contents > div {
+    width: 400px;
+}
+
+#tab2 img {
+    width: 110px;
+    margin-left: 13px;
+}
+
+footer {
+    display: flex;
+    height: 100px;
+    background: #faead2;
+}

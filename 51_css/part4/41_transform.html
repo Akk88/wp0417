@@ -67,21 +67,35 @@
 
         .trfro {
             /* 변환의 기준 */
-            transform-origin: 0 0;
+            /* 
+                transform-origi: x축 y축;
+                    값: px, %
+                    x축: left. right, center
+                    y축: top, bottom, center
+            */
+            transform-origin: 50% 50%;
         }
         /* .outer에 마우스를 올렸을 때 .trfro를 60도 회전되도록 지정하시오. */
         .outer:hover .trfro {
-            transition: rotate();
+            transform: rotate(60deg);
+        }
+
+        /* .outer에 마우스를 올렸을 때 .trfrox를 x축 기준으로 60도 회전되도록 지정하시오. */
+        .outer:hover .trfro {
+            transform: rotateX(60deg);
         }
 
 
-        /* .outer에 마우스를 올렸을 때 .trfrox를 x축 기준으로 60도 회전되도록 지정하시오. */
-
-
         /* .outer에 마우스를 올렸을 때 .trfroy를 y축 기준으로 90도 회전되도록 지정하시오. */
+        .outer:hover .trfroy {
+            transform: rotateY(90deg);
+        }
 
 
         /* .outer에 마우스를 올렸을 때 .trfsk를 y축 기준으로 10도 기울이시오. */
+        .outer:hover .trfsk {
+            transform: skewY(angle);
+        }
 
 
     </style>

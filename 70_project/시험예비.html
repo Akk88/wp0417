@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+</head>
+<style>
+    /* 초기화 */
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    img {
+        width: 100%;
+        vertical-align: top;
+    }
+    a {te}
+
+    /* 레이아웃과 배경색 */
+    .wrap {
+        width: 1000px;
+    }
+
+    header {
+        height: 100px;
+        background: #ccc;
+    }
+
+    section {
+        position: relative;
+        height: 500px;
+        overflow: hidden;
+    }
+
+    footer {
+        height: 100px;
+        background: #555;
+    }
+
+    /* 로고 */
+    .logo {text-align: :center; line-height}
+
+    /* 메인타이틀 */
+    h2 {
+        position: absolute; z-index: 9999;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 3rem;
+        color: #fff;
+        text-shadow: 1px 1px 5px #000;
+    }
+
+
+    /* 슬라이드 */
+    ul {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 400%;
+        animation: slide 9s infinite;
+    }
+
+    li {
+        width: 1000px;
+        height: 500px;
+        overflow: hidden;
+    }
+
+    @keyframes slide {
+        0% {top: 0;}
+        5% {top: -100%;}
+        33% {top: -100%;}
+        38% {top: -200%;}
+        66% {top: -200%;}
+        71% {top: -300%;}
+        99% {top: -300%;}
+        100% {top: 0%;}
+    }
+</style>
+
+<body>
+    <div class="wrap">
+        <header>
+            <h1 calss="logo"><a href="#">이탈리야</a></h1>
+        </header>
+        <section class="section">섹션
+        <ul>
+            <li><img src="img/이름.jpg" alt=""></li>
+            <li><img src="img/이름.jpg" alt=""></li>
+            <li><img src="img/이름.jpg" alt=""></li>
+            <li><img src="img/이름.jpg" alt=""></li>
+        </ul>
+    </section>
+        <footer>copyright 2023 이탈리야. All rights reserved.</footer>
+    </div>
+</body>
+</html>
